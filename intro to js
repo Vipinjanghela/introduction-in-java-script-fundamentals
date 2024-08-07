@@ -1,0 +1,149 @@
+//Q1. Explain the role of operators in JavaScript. Why are they essential in programming?
+//ANS:
+
+//Operators in JavaScript are symbols that perform operations on operands. Operands can be
+//variables, values, or expressions. Operators are essential in prorammin because they allow us to manipulate
+//data and perform calculations
+//Here are some of the main types of operators in JavaScript:
+//Arithmetic operators: These operators perform mathematical operations on numbers, such as addition (+), subtraction (-), multiplication (*), division (/), and modulus (%).
+//Comparison operators: These operators compare two values and return a Boolean (true or false) value based on the comparison result. Examples include equal to (==), not equal to (!=), greater than (>), less than (<), and so on.
+//Logical operators: These operators combine two or more Boolean values to produce a new Boolean value. Examples include logical AND (&&), logical OR (||), and logical NOT (!).
+//Assignment operators: These operators assign a value to a variable. Examples include the equals sign (=), the addition assignment operator (+=), and the multiplication assignment operator (*=).
+//Bitwise operators: These operators perform bit-level operations on numbers. Examples include bitwise AND (&), bitwise OR (|), bitwise NOT (~), and so on.//
+
+
+//Q2. Describe the categorization of operators in JavaScript based on their functionality. Provide examples for
+//each category.
+//ANS:
+// 1 Arithmetic operators: 
+
+//These operators perform mathematical operations on numbers,
+//such as addition (+), subtraction (-), multiplication (*), division (/), and modulus (%).
+// Addition (+)
+const sum = 1 + 2; // sum is now equal to 3
+// Subtraction (-)
+const difference = 10 - 5; // difference is now equal to 5
+// Multiplication (*)
+const product = 3 * 4; // product is now equal to 12
+// Division (/)
+const quotient = 12 / 3; // quotient is now equal to 4
+// Exponentiation (**)
+const power = 2 ** 3; // power is now equal to 8
+// Modulo (%)
+const remainder = 10 % 3; // remainder is now equal to 1
+
+// 2 Assignment operators:
+
+//These operators assign a value to a variable. Examples include the equals sign (=),
+// the addition assignment operator (+=), and the multiplication assignment operator (*=).
+// Assignment operator (=)
+const myVariable = 10;
+// Addition assignment operator (+=)
+myVariable += 5; // myVariable is now equal to 15
+// Subtraction assignment operator (-=)
+myVariable -= 5; // myVariable is now equal to 10
+// Multiplication assignment operator (*=)
+myVariable *= 2; // myVariable is now equal to 20
+// Division assignment operator (/=)
+myVariable /= 2; // myVariable is now equal to 10
+// Modulo assignment operator (%=)
+myVariable %= 3; // myVariable is now equal to 1
+
+// 3 Comparison Operators: These operators compare two values and return a Boolean value (true or false).
+
+// Equal to (==)
+const isEqual = 10 == 10; // isEqual is now equal to true
+// Not equal to (!=)
+const isNotEqual = 10 != 10; // isNotEqual is now equal to false
+// Greater than (>)
+const isGreaterThan = 10 > 5; // isGreaterThan is now equal to true
+// Less than (<)
+const isLessThan = 10 < 5; // isLessThan is now equal to false
+// Greater than or equal to (>=)
+const isGreaterThanOrEqual = 10 >= 10; // isGreaterThanOrEqual is now equal to
+true
+// Less than or equal to (<=)
+const isLessThanOrEqual = 10 <= 5; // isLessThanOrEqual is now equal to false
+
+//4. Logical Operators: These operators perform logical operations on Boolean values
+
+// AND (&&)
+const isAndTrue = true && true; // isAndTrue is now equal to true
+const isAndFalse = true && false; // isAndFalse is now equal to false
+// OR (||)
+const isOrTrue = true || false; // isOrTrue is now equal to true
+const isOrFalse = false || false; // isOrFalse is now equal to false
+// NOT (!)
+const isNotTrue = !true; // isNotTrue is now equal to false
+const isNotFalse = !false; // isNotFalse is now equal to true
+
+
+//Q3. Differentiate between unary, binary, and ternary operators in JavaScript. Give examples of each.
+//ANS:
+//In JavaScript, operators can be classified into three categories based on the number of operands
+// they take: unary, binary, and ternary operators.
+//Unary Operators
+
+//Unary operators take only one operand. They are used to perform an operation on a single value.
+//Binary Operators
+
+//Binary operators take two operands. They are used to perform an operation on two values.
+//example
+let x = 7;
+let result = x > 5 ? 'greater than 5' : 'less than or equal to 5';
+console.log(result); // Output: "greater than 5"
+
+//Q4. Discuss the precedence and associativity of operators in JavaScript. Why is understanding these concepts
+//important?
+//ans:
+//Precedence refers to the order in which operators are evaluated when multiple operators are present
+//in an expression. Operators with higher precedence are executed first. For example, in the expression 3 + 5 * 2,
+//multiplication (*) has higher precedence than addition (+), so the multiplication is performed first
+//const result = 3 + 5 * 2; // The result will be 13, not 16 (if addition had higher precedence)
+
+//const result = 10 + 5 + 2; // The result will be 17 (evaluated as (10 + 5) + 2)
+
+//Avoiding Errors: Without a clear understanding of operator precedence and associativity,
+// you may write code that produces unexpected results or errors.
+//Code Readability: When you understand the order of operations, you can write more readable code that is easier to maintain and debug.
+//Code Efficiency: By using the correct operator precedence and associativity,
+// you can optimize your code to perform operations more efficiently.
+//Predictable Behavior: Understanding operator precedence and associativity helps you predict the behavior of your code, 
+//making it easier to write robust and reliable applications.
+//Better Debugging: When you encounter issues in your code, 
+//understanding operator precedence and associativity can help you identify and fix problems more quickly.
+
+//Q5. Write a JavaScript program that calculates the simple interest using the formula Simple interest =
+//(principal * rate * time) / 100.
+//ANS:
+
+const principal = 1000
+const rate = 5
+const time = 2 // in years
+//const result = (principal * rate * time)/100
+console.log("Simple Interest =", result)
+
+//Q6. Write a Javascript program to calculate the Body Mass Index (BMI) using the formula BMI = weight (kg)/
+//height * height.
+//ANS:
+const height = 160 // in cm
+const weight = 55 // in kg
+const BMI = weight/ height * height
+console.log("BMI =", BMI)
+
+//Q7. Write a program in JavaScript to calculate the area of a circle given its radius value of 10. Use appropriate
+//arithmetic operators.
+//ANS:
+
+const radius = 10; // Radius of the circle
+// Calculate the area of the circle: area = π * radius^2
+const pi = Math.PI; // Approximate value of pi
+const area = pi * Math.pow(radius, 2);
+console.log("Area of the circle:", area);
+                                                                
+                                                               
+
+
+
+
+
